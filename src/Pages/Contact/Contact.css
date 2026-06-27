@@ -1,0 +1,229 @@
+.contact-us-page{
+    background-color: var(--bg-primary);
+}
+
+.heading-section{
+    background: linear-gradient(180deg, #0f1f3d 0%, #0a0e1a 60%);
+    padding: 5rem 6rem;
+    text-align: center;
+    margin-bottom: 30px;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.heading-section h4{
+    align-items: flex-end;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 200;
+    margin:10px;
+}
+
+.heading-section h2{
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 10px;
+}
+
+.heading-section p{
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin:10px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;   /* align to top not center */
+    justify-content: center;
+    padding: 4rem 6rem;
+    gap: 4rem;  
+}
+
+.contact-form{
+    flex: 1.5; /* form is taking more space*/
+    max-width: 550px;
+    padding: 2rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+
+.contact-form h3{
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form p{
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;     
+}
+
+.form label{
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.form input,
+.form textarea{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* when clicked*/
+.form input:focus,
+.form textarea:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.form textarea {
+    min-height: 150px;
+    resize: vertical;       /* user can resize vertically only */
+}
+
+.form button[type='submit'] {
+    all:unset;
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+}
+
+.form button[type='submit']:hover {
+    transform: translateY(-2px);
+}
+
+.form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Success and error messages */
+.success-msg {
+    color: var(--success);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.error-msg {
+    color: var(--danger);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.contact-info{
+    flex: 1;
+    padding: 2rem;
+    border-left: 2px solid var(--border);
+    
+}
+
+.contact-info h3{
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.each-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1.5rem;    /* space between info items */
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.each-info:hover {
+    background: rgba(59,130,246,0.05);
+    padding-left: 1.5rem;        /* subtle indent on hover */
+}
+
+.head-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.head-info h4{
+    color: var(--accent-primary);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.head-info span{
+    color: var(--text-primary);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.desc-info p{
+    color: var(--text-secondary);
+    font-size: 0.95rem;       
+    padding-left: 2rem;       
+    margin: 0;
+    line-height: 1.6;
+}
+
+.thanking-note{
+    text-align: center;
+    padding: 3rem 6rem;
+    margin-top: 2rem;
+}
+
+.thanking-note h3{
+    color: var(--accent-primary);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.thanking-note p{
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}

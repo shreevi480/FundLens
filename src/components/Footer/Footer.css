@@ -1,0 +1,40 @@
+.footer{
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    border-top: 1px solid var(--border);
+    padding: 0 2rem;
+}
+
+.rights{
+    color:var(--text-primary);
+    align-items: center;
+    display: flex;
+}
+
+.links{
+    display:flex;
+    gap:2rem;
+}
+
+.links a{
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.links a:hover{
+    text-shadow: 0 0 12px var(--accent-primary);    
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/*adding sizing for icons*/
+.links a svg {
+    font-size: 1.3rem;  
+}

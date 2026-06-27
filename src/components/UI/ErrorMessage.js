@@ -1,0 +1,2 @@
+/*Shown IF API call fail
+ Never assume API always works. */

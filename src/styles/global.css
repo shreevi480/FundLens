@@ -1,0 +1,24 @@
+:root {
+  --bg-primary: #0a0e1a;      /* deep dark navy */
+  --bg-secondary: #111827;    /* card backgrounds */
+  --bg-card: #1a2235;         /* elevated cards */
+  --accent-primary: #3b82f6;  /* electric blue */
+  --accent-secondary: #06b6d4;/* cyan */
+  --text-primary: #f1f5f9;    /* near white */
+  --text-secondary: #94a3b8;  /* muted text */
+  --success: #10b981;         /* gains - green */
+  --danger: #ef4444;          /* losses - red */
+  --border: #1e2d45;          /* subtle borders */
+  --moderate: #eab308;        /* for moderate values*/
+  --warning: #eab308;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+}

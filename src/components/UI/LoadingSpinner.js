@@ -1,0 +1,2 @@
+/* Shown WHILE API data is loading.
+    Every API call needs this. */

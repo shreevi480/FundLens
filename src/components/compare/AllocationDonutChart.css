@@ -1,0 +1,41 @@
+.allocation-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 0 6rem 2rem;
+}
+
+.donut-charts-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.donut-wrapper {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.donut-wrapper:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
+}
+
+.donut-fund-name {
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    min-height: 2.5rem;
+}

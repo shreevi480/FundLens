@@ -1,0 +1,20 @@
+.chart-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 0 6rem 2rem;
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.chart-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}

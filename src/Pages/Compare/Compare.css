@@ -1,0 +1,200 @@
+.compare-page {
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    margin-bottom: 0;
+}
+
+.fund-selection {       /* 3 slots side by side */
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: space-between;
+    padding: 2rem 6rem 1rem;
+}
+
+.slots{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: flex-start;  
+}
+
+.fund-slot {            /* individual slot container */
+    flex:1;
+    min-height: 200px;
+    border: 2px dashed var(--border);
+    border-radius: 16px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    transition: all 0.3s ease;
+    position: relative;
+    max-width: 350px;
+    overflow: visible;
+}
+
+.fund-slot:hover{
+    border-color: var(--accent-primary);
+}
+
+.fund-slot button{
+    all:unset;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all  0.3s ease;
+}
+
+.fund-slot button:hover{
+    color: var(--accent-primary);
+    transform: scale(1.05);
+}
+
+.search-wrapper {       /* wraps input + dropdown */
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    overflow: visible;
+}
+
+.fund-slot input {      /* search input styling */
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--accent-primary);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.dropdown {             /* dropdown container */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 999;
+    margin-top: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/*custome scrollbar*/
+.dropdown::-webkit-scrollbar{
+    width: 4px;
+}
+
+.dropdown::-webkit-scrollbar-thumb{
+    background: var(--border);
+    border-radius: 4px;
+}
+.dropdown-item {        /* each fund name in dropdown */
+    padding: 0.75rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:last-child {  
+    border-bottom: none;
+}
+
+.dropdown-item:hover {  /* hover highlight */
+    background: rgba(59,130,246,0.1);
+    color: var(--text-primary);
+    padding-left: 1.5rem;
+}
+
+.filled-slot {          /* when fund is selected */
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.filled-slot h4{
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    flex:1;
+}
+
+.filled-slot button{
+    all:unset;
+    align-self: flex-end;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 50%;
+    transition: all 0.2s ease;
+}
+
+.filled-slot button:hover {
+    background: rgba(239,68,68,0.15);
+    color: var(--danger);
+}
+
+.compare-btn{         
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 6rem 2rem;
+    z-index:1;
+} 
+
+.compare-btn button { /* base button */
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.compare-btn button:disabled {  /* disabled state */
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    border: 1px solid var(--border);
+}
+
+.compare-btn button:not(:disabled) {  /* active state */
+    background: var(--accent-primary);
+    color: white;
+    box-shadow: 0 0 20px rgba(59,130,246,0.4);
+}
+
+.compare-btn button:not(:disabled):hover {
+    background: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(59,130,246,0.6);
+}
+
+.comparision-results {
+    padding-bottom: 4rem;
+}
