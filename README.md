@@ -1,70 +1,217 @@
-# Getting Started with Create React App
+# FundLens 🔍
+### Smart Mutual Fund Comparison Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, data-driven web application built with React that allows investors to search, compare, and analyze mutual funds side by side — with interactive charts, key insights, and winner detection.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### 🏠 Home Page
+- Hero section with call-to-action
+- Key features overview with animated cards
+- Visual "How It Works" timeline
+- Why comparison matters — live fund A vs Fund B demo with colored risk indicators
+- Popular mutual funds grid with real scheme codes
 
-### `npm start`
+### 🔍 Compare Page
+- Live search across **37,000+ mutual funds** from MF API India
+- Up to **3 fund slots** with add/remove functionality
+- Real-time dropdown with instant filtering as you type
+- Smart Compare button that activates only when 2+ funds are selected
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Comparison Results
+- **Fund Summary Cards** — NAV, 1Y returns, expense ratio, risk level with 30-day sparkline trend chart
+- **Returns Line Chart** — Normalized % returns over 12 months for all selected funds
+- **Asset Allocation Donut Charts** — Portfolio composition per fund
+- **Key Insights** — Auto-generated colored insight cards (highest return, lowest risk, expense analysis)
+- **Winner Section** — Best fund per category with gold/blue/green winner cards
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📖 About Page
+- Project story and mission
+- Interactive accordion for key financial metrics explained
+- Animated 3D tech stack badges
+- Disclaimer section
 
-### `npm test`
+### 📬 Contact Page
+- Two-column layout with contact form
+- Real email delivery via **EmailJS** (no backend required)
+- Contact information panel with social links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Category - Technology 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend Framework - React 18 (JSX in .js files) |
+Routing - React Router DOM v6 
+Charts - Recharts 
+Icons - React Icons 
+Email - EmailJS 
+Data Source - MF API India (api.mfapi.in) 
+Styling - CSS3 with Custom Variables 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+fundlens/
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.js
+│   │   │   └── Navbar.css
+│   │   ├── Footer/
+│   │   │   ├── Footer.js
+│   │   │   └── Footer.css
+│   │   └── compare/
+│   │       ├── FundSummaryCard.js
+│   │       ├── ReturnsLineChart.js
+│   │       ├── AllocationDonutChart.js
+│   │       ├── KeyInsights.js
+│   │       └── WinnerSection.js
+│   │
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Compare/
+│   │   ├── About/
+│   │   ├── Contact/
+│   │   └── FundDetail/
+│   │
+│   ├── utils/
+│   │   └── formatters.js
+│   │
+│   ├── styles/
+│   │   └── global.css
+│   │
+│   ├── App.js
+│   └── index.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Make sure you have these installed on your system:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js (v16 or above) 
+- npm (comes with Node.js)
+- Git
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Installation
 
-### Analyzing the Bundle Size
+**Step 1 — Clone the repository**
+git clone https://github.com/shreevi480/fundlens.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+**Step 2 — Navigate into the project folder**
+cd fundlens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+**Step 3 — Install all dependencies**
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+**Step 4 — Start the development server**
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The app will open automatically at `http://localhost:3000`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Dependencies Installed
+
+When you run `npm install`, these packages are installed automatically:
+
+react-router-dom    → page navigation
+recharts            → interactive charts
+react-icons         → icon library
+@emailjs/browser    → contact form email delivery
+
+---
+
+## 🔑 Environment Setup (EmailJS)
+
+The contact form uses EmailJS to send emails. If you want to use your own EmailJS account:
+
+1. Create a free account at [emailjs.com](https://www.emailjs.com)
+2. Create an Email Service and note your **Service ID**
+3. Create an Email Template with variables: `{{from_name}}`, `{{from_email}}`, `{{subject}}`, `{{message}}`
+4. Note your **Template ID** and **Public Key**
+5. Update these values in `src/pages/Contact/Contact.js`:
+
+```js
+emailjs.send(
+    "YOUR_SERVICE_ID",
+    "YOUR_TEMPLATE_ID",
+    templateParams,
+    "YOUR_PUBLIC_KEY"
+)
+```
+
+## 🔑 Environment Setup
+
+Create a `.env` file in the root folder:
+
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id  
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+
+See `.env.example` for reference.
+
+> ⚠️ Note: The current credentials in the code are for the developer's account. Please replace with your own for personal use.
+
+---
+
+## 📡 API Used
+
+**MF API India** — Free, open, no authentication required
+
+```
+Base URL: https://api.mfapi.in/mf
+
+All funds list:     GET /mf
+Fund details:       GET /mf/{schemeCode}
+```
+
+- Returns 37,000+ mutual fund schemes
+- Provides complete NAV history
+- No API key needed
+- Free to use
+
+---
+
+## 📊 Data & Limitations
+
+- **Returns, NAV, category** — Real data from MF API India
+- **Expense ratio** — Estimated based on SEBI category guidelines
+- **Risk level** — Derived from fund category classification
+- **Asset allocation** — Representative mock data based on fund category
+
+> This is an educational portfolio project. Data shown is for informational purposes only and should not be considered financial advice.
+
+---
+
+## 👩‍💻 Author
+
+**Shreevi Patel**
+
+- GitHub: [@shreevi480](https://github.com/shreevi480)
+- LinkedIn: [Shreevi Patel](https://www.linkedin.com/in/shreevi-patel-57960630a)
+- Email: shreevindia02@gmail.com
+
+---
+
+## 📄 Disclaimer
+
+FundLens is an educational and portfolio project created to demonstrate frontend development and financial data visualization concepts. The information presented is intended for informational purposes only and should not be considered financial or investment advice. Always consult a qualified financial professional before making investment decisions.
+
+---
+
+*Built with ❤️ as a frontend portfolio project*
