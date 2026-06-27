@@ -55,6 +55,7 @@ Styling - CSS3 with Custom Variables
 
 ## 📁 Project Structure
 
+```
 fundlens/
 ├── public/
 │   └── index.html
@@ -89,6 +90,7 @@ fundlens/
 │   │
 │   ├── App.js
 │   └── index.js
+```
 
 ---
 
@@ -159,9 +161,11 @@ emailjs.send(
 
 Create a `.env` file in the root folder:
 
+```
 REACT_APP_EMAILJS_SERVICE_ID=your_service_id
 REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id  
 REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
 See `.env.example` for reference.
 
